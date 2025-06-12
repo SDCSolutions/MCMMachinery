@@ -1,0 +1,77 @@
+---
+layout: default
+title: Home
+---
+
+<nav class="nav-main">
+  <div class="nav-brand"><a href="{{ '/' | relative_url }}">MCM Group</a></div>
+  <ul class="nav-links-dropdown">
+    <li><a href="{{ '/' | relative_url }}">Home</a></li>
+    <!-- <li><a href="{{ '/new-machinery/' | relative_url }}">New Machinery</a></li> -->
+    <li><a href="{{ '/used-machinery/' | relative_url }}">Used Machinery</a></li>
+    <li><a href="{{ '/custom-applications/' | relative_url }}">Custom Applications</a></li>
+    <li><a href="{{ '/sell-with-mcm-group/' | relative_url }}">Sell with MCM Group</a></li>
+    <!-- <li><a href="{{ '/testimonials/' | relative_url }}">Testimonials</a></li> -->
+  </ul>
+</nav>
+
+<header class="hero-header">
+  <!-- New Machinery section is hidden -->
+  <!--
+  <section class="hero-section">
+    <h2>New Machinery</h2>
+    <p>Discover the latest machinery models with advanced technology and reliability for your business.</p>
+    <a href="{{ '/new-machinery/' | relative_url }}" class="hero-cta">View New Machinery</a>
+  </section>
+  -->
+  <section class="hero-section">
+    <h2>Used Machinery</h2>
+    <p>Browse a curated selection of quality used machinery at competitive prices.</p>
+    <a href="{{ '/used-machinery/' | relative_url }}" class="hero-cta">View Used Machinery</a>
+  </section>
+  <section class="hero-section">
+    <h2>Custom Applications</h2>
+    <p>Learn about our bespoke solutions and custom machinery builds for unique industrial needs.</p>
+    <a href="{{ '/custom-applications/' | relative_url }}" class="hero-cta">See Custom Work</a>
+  </section>
+</header>
+
+<section class="partners-section">
+  <div class="partners-title">Our Trusted Partners</div>
+  <ul class="partners-list">
+    <li class="partner-item">
+      <a href="https://www.acmemfg.com" target="_blank" rel="noopener noreferrer" title="Acme Manufacturing">
+        <img src="{{ '/images/partner-acme.png' | relative_url }}" alt="Acme Manufacturing logo" class="partner-logo" />
+      </a>
+    </li>
+    <li class="partner-item">
+      <a href="https://www.primerobotics.com" target="_blank" rel="noopener noreferrer" title="Prime Robotics">
+        <img src="{{ '/images/partner-prime-robotics.png' | relative_url }}" alt="Prime Robotics logo" class="partner-logo" />
+      </a>
+    </li>
+    <li class="partner-item">
+      <a href="https://www.superconveyor.com" target="_blank" rel="noopener noreferrer" title="Super Conveyor Corp">
+        <img src="{{ '/images/partner-super-conveyor.png' | relative_url }}" alt="Super Conveyor Corp logo" class="partner-logo" />
+      </a>
+    </li>
+  </ul>
+</section>
+
+<section class="contact-section">
+  <h2>Contact Us</h2>
+  <p>
+    Ready to discuss your next project or have questions?<br>
+    Fill out the form below and our team will get back to you promptly.
+  </p>
+  <form class="contact-form" method="POST" action="https://formspree.io/f/your-form-id">
+    <label for="contact-name">Name</label>
+    <input type="text" id="contact-name" name="name" required placeholder="Your Name">
+    <label for="contact-email">Email</label>
+    <input type="email" id="contact-email" name="email" required placeholder="you@email.com">
+    <label for="contact-phone">Phone Number</label>
+    <input type="tel" id="contact-phone" name="phone" required placeholder="(555) 555-5555">
+    <label for="contact-message">Message</label>
+    <textarea id="contact-message" name="message" rows="4" required placeholder="How can we help you?"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
